@@ -24,7 +24,7 @@ app.post("/sum", async (req:Request, res:Response) : Promise<any> => {
             type: "ADD"
         }
     })
-    
+    console.log(request)
    return  res.status(201).json({ answer: result, id: request.id });
 })
 
